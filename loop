@@ -1,0 +1,20 @@
+positive_sum = 0
+negative_sum = 0
+print("enter integer one by one (enter -1 to stop):")
+
+while True : 
+    num = int(input("enter a num :"))
+    if num ==-1 :
+        break
+    if num > 0 :
+        print(f"{num} is a positive num.")
+        positive_sum += num
+    elif num <0:
+        print(f"{num}is the a negative num.")
+        negative_sum += num
+    else:
+        print("the num is zero.")
+
+print("\n___results___")
+print(f"total sum of the positive num: {"positive_sum"}")
+print(f"total sum of the positive num: {"negative_sum"}")
