@@ -1,0 +1,15 @@
+a=int(input("Enter the First Number : "))
+b=int(input("Enter the Second Number : "))
+c=a+b
+d=a*b
+e=a/b
+f=a//b
+g=a%b
+h=a**b
+print("Addition Value : ",c)
+print("Multiplication Value : ",d)
+print("Division Value : ",e)
+print("Floor Division Value : ",f)
+print("Modulus Value : ",g)
+print("Exponentiation Value : ",h)
+
