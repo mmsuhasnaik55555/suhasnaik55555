@@ -1,0 +1,19 @@
+def find_primes_up_to(limit):
+    if limit < 2:
+        return []
+        
+    # Create a boolean list assuming all numbers are prime initially
+    primes = [True] * (limit + 1)
+    primes[0] = primes[1] = False
+    
+    for p in range(2, int(limit**0.5) + 1):
+        if primes[p]:
+            # Mark all multiples of p starting from p*p as not prime
+            for multiple in range(p * p, limit + 1, p):
+                primes[multiple] = False
+                
+    # Return all numbers still marked True
+    return [num for num, is_p in enumerate(primes) if is_p]
+
+# Example usage
+print(find_primes_up_to(30)) 
